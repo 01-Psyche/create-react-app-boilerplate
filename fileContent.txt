@@ -1,0 +1,64 @@
+Recreating the "src"
+
+1. Delete the src folder
+2. Then recreate it (the "src" folder) in the same directory
+3. then create a new file naming it as - index.js -
+4. Paste this in the "index.js" file 👇👇👇 
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+
+5. then create a new file naming it as - App.js -
+6. Paste this in the "App.js" file 👇👇👇 
+
+import React from "react";
+
+const App = () => {
+  return <div>App</div>;
+};
+
+export default App;
+
+
+
+7. Optional - you can delete all the contents in the public folder, then recreate the index.html then paste Paste this in the "index.html" file 👇👇👇 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>React App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+
+
+
+other files that can be deleted in the public folder
+- favicon.ico
+- logo192.png
+- logo512.png
+- manifest.json
+- robot.txt
+
+NOTE: If you find all these stressful, there is an edited version in the "edited" branch of this Repository
